@@ -2,6 +2,8 @@
 :root {
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
+  --action-pink: #ec4899;
+  --action-pink-hover: #db2777;
   --secondary-color: #64748b;
   --accent-color: #0ea5e9;
   --text-primary: #1e293b;
@@ -174,7 +176,7 @@ body {
 }
 
 .publication-authors a {
-   color: var(--primary-color) !important;
+   color: var(--text-primary) !important;
    text-decoration: none;
    font-weight: 600;
    transition: var(--transition);
@@ -197,7 +199,7 @@ body {
 }
 
 .publication-authors a:hover {
-    color: var(--primary-hover) !important;
+    color: var(--text-secondary) !important;
 }
 
 .author-block {
@@ -390,7 +392,7 @@ code {
 }
 
 .copy-bibtex-btn {
-  background: var(--primary-color);
+  background: var(--action-pink);
   color: white;
   border: none;
   border-radius: var(--border-radius);
@@ -405,7 +407,7 @@ code {
 }
 
 .copy-bibtex-btn:hover {
-  background: var(--primary-hover);
+  background: var(--action-pink-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -425,7 +427,7 @@ code {
   right: 2rem;
   width: 50px;
   height: 50px;
-  background: var(--primary-color);
+  background: var(--action-pink);
   color: white;
   border: none;
   border-radius: 50%;
@@ -442,7 +444,7 @@ code {
 }
 
 .scroll-to-top:hover {
-  background: var(--primary-hover);
+  background: var(--action-pink-hover);
   transform: translateY(-3px);
   box-shadow: var(--shadow-xl);
 }

@@ -11,8 +11,8 @@
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <!-- Project authors -->
+  <meta name="author" content="Dahye Kim, Deepti Ghadiyaram, Raghudeep Gadde">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
@@ -32,7 +32,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:author" content="Dahye Kim">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="KEYWORD1">
   <meta property="article:tag" content="KEYWORD2">
@@ -53,8 +53,9 @@
 
   <!-- Academic/Research Specific -->
   <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_author" content="Kim, Dahye">
+  <meta name="citation_author" content="Ghadiyaram, Deepti">
+  <meta name="citation_author" content="Gadde, Raghudeep">
   <meta name="citation_publication_date" content="2024">
   <meta name="citation_conference_title" content="CONFERENCE_NAME">
   <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
@@ -74,11 +75,11 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/fast.png">
+  <link rel="apple-touch-icon" href="static/images/fast.png">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -119,18 +120,32 @@
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Dahye Kim",
+        "affiliation": [
+          {
+            "@type": "Organization",
+            "name": "Boston University"
+          },
+          {
+            "@type": "Organization",
+            "name": "Amazon"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Deepti Ghadiyaram",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Boston University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Raghudeep Gadde",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Amazon"
         }
       }
     ],
@@ -170,7 +185,7 @@
     "@type": "Organization",
     "name": "INSTITUTION_OR_LAB_NAME",
     "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "logo": "https://YOUR_DOMAIN.com/static/images/fast.png",
     "sameAs": [
       "https://twitter.com/YOUR_TWITTER_HANDLE",
       "https://github.com/YOUR_GITHUB_USERNAME"
@@ -186,54 +201,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
@@ -241,23 +208,22 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://kim-dahye.github.io/" target="_blank" rel="noopener noreferrer">Dahye Kim</a><sup>1,2,*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://deeptigp.github.io/" target="_blank" rel="noopener noreferrer">Deepti Ghadiyaram</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/raghudeep-gadde/" target="_blank" rel="noopener noreferrer">Raghudeep Gadde</a><sup>2</sup>
+              </span>
+            </div>
 
                   <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Boston University &nbsp; <sup>2</sup>Amazon</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Work done during internship at Amazon.</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -273,20 +239,9 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/DDiT" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -295,16 +250,6 @@
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -314,23 +259,22 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Figure above abstract -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <img src="static/images/fig1.png" alt="Figure 1" loading="lazy" style="width: 100%; height: auto;" />
+      <div class="content has-text-justified" style="margin-top: 1rem;">
+        <p>
+          <strong>DDiT dynamically selects the optimal patch size</strong> at each denoising step at inference yielding significant computational gains at no loss of perceptual quality. Results are shown for FLUX-1.Dev for text-to-image and Wan-2.1 for text-to-video generation.
+          The top panel denotes the baseline (original model), while the remaining panels illustrate outputs from DDiT at different acceleration rates.
+          ImageReward, CLIP, and VBench scores are reported (higher is better).
+        </p>
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End figure section -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -341,7 +285,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Diffusion Transformers (DiTs) have achieved state-of-the-art performance in image and video generation, but their success comes at the cost of heavy computation. This inefficiency is largely due to the fixed tokenization process, which uses constant-sized patches throughout the entire denoising phase, regardless of the content's complexity. We propose <em>dynamic tokenization</em>, an efficient <strong>test-time strategy</strong> that varies patch sizes based on content complexity and the denoising timestep. Our key insight is that early timesteps only require coarser patches to model global structure, while later iterations demand finer (smaller-sized) patches to refine local details. During inference, our method dynamically reallocates patch sizes across denoising steps for image and video generation and substantially reduces cost while preserving perceptual generation quality. Extensive experiments demonstrate the effectiveness of our approach: it achieves up to 3.52x and 3.2x speedup on FLUX-1.Dev and Wan 2.1, respectively, without compromising the generation quality and prompt adherence.
           </p>
         </div>
       </div>
@@ -350,125 +294,72 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+<!-- Figure 2 below abstract -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Main idea: dynamic tokenization during denoising.</h2>
+    <div class="content has-text-justified" style="margin-top: 1rem;">
+      <p>
+        Current methods use the same patch size for <em>all</em> denoising steps during inference time. Instead, <strong>DDiT</strong> adapts the patch size at each timestep according to the latent complexity, allocating fewer tokens for certain timesteps and more tokens for certain others. While DiT divides VAE latents into patches, for illustrative purposes, we use a real image in pixel space.
+      </p>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+    <div class="hero-body">
+      <img src="static/images/fig2.png" alt="Figure 2" loading="lazy" style="width: 100%; height: auto;" />
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End figure 2 section -->
 
+<!-- Figure 3 and method details -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Dynamic Patching and Tokenization</h2>
+    <div class="content has-text-justified">
+      <p>
+        <strong>Revised patch-embedding layer to support patches of varied resolutions.</strong> We modify the standard patch-embedding layer, designed for a fixed patch size <em>p</em>, to additionally support patch sizes <em>p</em><sub>new</sub>.
+      </p>
+    </div>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+    <div class="hero-body" style="padding-top: 0.5rem;">
+      <img src="static/images/fig3.png" alt="Figure 3" loading="lazy" style="width: 72%; height: auto; display: block; margin: 0 auto;" />
+    </div>
+
+    <h2 class="title is-3" style="margin-top: 1rem;">Dynamic Patch Scheduling</h2>
+    <div class="content has-text-justified">
+      <p>
+        We propose a test-time <strong>Dynamic Patch Scheduler</strong> that automatically determines the optimal patch size at each timestep, adapting the computational load based on generation complexity and the input prompt. We measure the <em>rate of change of the latent manifold</em> over time. We hypothesize that this rate correlates with the level of detail being generated. If the underlying latent evolves slowly within a short timestep window, we posit that coarse-grained details are being generated. Consequently, we divide the latent into coarser patches and process them, saving computational resources. Conversely, if the underlying latent evolves rapidly, we infer that fine-grained details are being generated and fall back to using finer-grained latent patches.
+      </p>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End figure 3 and method details -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        Qualitative comparisons with the base model, TeaCache, TaylorSeer, and DDiT under similar speedups on DrawBench.
+        <strong>DDiT</strong> effectively preserves fine-grained details, pose, spatial layout, and overall color distribution of the generated images.
+      </p>
     </div>
-  </section>
-<!--End paper poster -->
+    <div class="hero-body" style="padding-top: 0.5rem;">
+      <img src="static/images/zoom_in.png" alt="Zoom-in qualitative comparison" loading="lazy" style="width: 72%; height: auto; display: block; margin: 0 auto;" />
+    </div>
 
-
+    <div class="content has-text-justified" style="margin-top: 1rem;">
+      <p>
+        <strong>Qualitative comparison of text-to-video generation between DDiT and the baseline.</strong>
+        DDiT produces videos with comparable visual quality to the baseline while achieving significant speedup.
+      </p>
+    </div>
+    <div class="hero-body" style="padding-top: 0.5rem;">
+      <img src="static/images/fig_video.png" alt="Text-to-video qualitative comparison" loading="lazy" style="width: 72%; height: auto; display: block; margin: 0 auto;" />
+    </div>
+  </div>
+</section>
+<!-- End results -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -480,35 +371,21 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{DDiT2026,
+  title={DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers},
+  author={Dahye Kim and Deepti Ghadiyaram and Raghudeep Gadde},
+  journal={arxiv},
+  year={2026},
 }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
+  <footer class="footer" style="padding: 1rem 0;">
+    <div class="container has-text-centered" style="font-size: 12px; color: #9ca3af; opacity: 0.75;">
+      Built with the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer" style="color: #9ca3af;">Academic Project Page Template</a> (adapted from <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer" style="color: #9ca3af;">Nerfies</a>), licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: #9ca3af;">CC BY-SA 4.0</a>.
     </div>
-  </div>
-</footer>
+  </footer>
 
 <!-- Statcounter tracking code -->
   
