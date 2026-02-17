@@ -6,11 +6,11 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers">
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers">
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="fast diffusion">
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
   <!-- Project authors -->
   <meta name="author" content="Dahye Kim, Deepti Ghadiyaram, Raghudeep Gadde">
   <meta name="robots" content="index, follow">
@@ -19,23 +19,23 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="DDiT">
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers">
+  <meta property="og:title" content="PAPER_TITLE">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers">
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://ddit-fast.github.io/ddit/">
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
   <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://ddit-fast.github.io/ddit/static/images/fig1.png">
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="DDiT">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
   <meta property="article:author" content="Dahye Kim">
   <meta property="article:section" content="Research">
-  <!-- <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2"> -->
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -56,7 +56,7 @@
   <meta name="citation_author" content="Kim, Dahye">
   <meta name="citation_author" content="Ghadiyaram, Deepti">
   <meta name="citation_author" content="Gadde, Raghudeep">
-  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_publication_date" content="2024">
   <meta name="citation_conference_title" content="CONFERENCE_NAME">
   <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
   
@@ -149,21 +149,21 @@
         }
       }
     ],
-    "datePublished": "2026-01-01",
+    "datePublished": "2024-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "arXiv"
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
     },
-    "url": "https://ddit-fast.github.io/ddit/",
-    "image": "https://ddit-fast.github.io/ddit/static/images/fig1.png",
-    "keywords": ["fast diffusion", "machine learning", "computer vision"],
-    "abstract": "Diffusion Transformers (DiTs) have achieved state-of-the-art performance in image and video generation, but their success comes at the cost of heavy computation. This inefficiency is largely due to the fixed tokenization process, which uses constant-sized patches throughout the entire denoising phase, regardless of the content's complexity. We propose dynamic tokenization, an efficient test-time strategy that varies patch sizes based on content complexity and the denoising timestep. Our key insight is that early timesteps only require coarser patches to model global structure, while later iterations demand finer (smaller-sized) patches to refine local details. During inference, our method dynamically reallocates patch sizes across denoising steps for image and video generation and substantially reduces cost while preserving perceptual generation quality. Extensive experiments demonstrate the effectiveness of our approach: it achieves up to 3.52x and 3.2x speedup on FLUX-1.Dev and Wan 2.1, respectively, without compromising the generation quality and prompt adherence.",
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
     "citation": "BIBTEX_CITATION_HERE",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://ddit-fast.github.io/ddit/"
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
     },
     "about": [
       {
@@ -181,11 +181,15 @@
   <!-- Website/Organization Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://ddit-fast.github.io/ddit/",
+    "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "DDiT",
-    "url": "https://ddit-fast.github.io/ddit/",
-    "logo": "https://ddit-fast.github.io/ddit/static/images/fig1.png",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/fast.png",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
   }
   </script>
 </head>
