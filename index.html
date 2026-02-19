@@ -352,20 +352,21 @@
 
     <div class="content has-text-justified" style="margin-top: 1rem;">
       <p>
-        <strong>Qualitative comparison of text-to-video generation between DDiT and the baseline.</strong>
-        DDiT produces videos with comparable visual quality to the baseline while achieving significant speedup.
-      </p>
-    </div>
-    <div class="hero-body" style="padding-top: 0.5rem;">
-      <img src="static/images/fig_video.png" alt="Text-to-video qualitative comparison" loading="lazy" style="width: 72%; height: auto; display: block; margin: 0 auto;" />
-    </div>
-    <div class="content has-text-justified" style="margin-top: 1rem;">
-      <p>
         <strong>Qualitative comparisons on PartiPrompts.</strong> The number next to the method name indicates the amount of computational speedup. Notice how for the same speedup, e.g., 2.2x, TeaCache loses the fine-grained texture in the prompt "A roast turkey." Similar observations hold true for TaylorSeer, where the overall color distribution and the background are not preserved in the prompts "A pumpkin" and "a dolphin."
       </p>
     </div>
     <div class="hero-body" style="padding-top: 0.5rem;">
       <img src="static/images/fig4.png" alt="Additional qualitative comparison" loading="lazy" style="width: 72%; height: auto; display: block; margin: 0 auto;" />
+    </div>
+    <div class="hero-body" style="padding-top: 0.5rem;">
+      <div class="content has-text-justified" style="margin-bottom: 0.75rem;">
+        <p>
+          <strong>Qualitative comparison of text-to-video generation between DDiT and the baseline.</strong> DDiT produces videos with comparable visual quality to the baseline while achieving significant speedup.
+        </p>
+      </div>
+      <video controls preload="metadata" style="width: 72%; height: auto; display: block; margin: 0 auto;">
+        <source src="static/videos/Wan_vs_DDiT.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -390,19 +391,6 @@
     </div>
 </section>
 <!--End BibTex citation -->
-
-<!-- Bottom video -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Video</h2>
-    <div class="hero-body" style="padding-top: 0.5rem;">
-      <video controls preload="metadata" style="width: 72%; height: auto; display: block; margin: 0 auto;">
-        <source src="static/videos/Wan_vs_DDiT.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
-<!-- End bottom video -->
 
   <footer class="footer" style="padding: 1rem 0;">
     <div class="container has-text-centered" style="font-size: 12px; color: #9ca3af; opacity: 0.75;">
