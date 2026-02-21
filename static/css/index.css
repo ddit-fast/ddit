@@ -153,6 +153,10 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.affiliations-block {
+  margin-bottom: 0.75rem;
+}
+
 .publication-venue {
     color: var(--text-secondary);
     width: fit-content;
@@ -308,6 +312,16 @@ body {
   font-size: 0.875rem;
   color: var(--text-light);
   font-style: italic;
+}
+
+.cvpr-venue {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+  display: inline-block;
+  margin-top: 0.2rem;
 }
 
 /* Section Titles */
